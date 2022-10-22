@@ -15,6 +15,7 @@
 		3D2FE9242902E253005886DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2FE9222902E253005886DF /* LaunchScreen.storyboard */; };
 		3D2FE92F2902E254005886DF /* InformacionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FE92E2902E254005886DF /* InformacionTests.swift */; };
 		3D2FE93A2902E254005886DF /* InformacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FE9392902E254005886DF /* InformacionUITests.swift */; };
+		3D2FE9482902EC40005886DF /* ModificarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FE9472902EC40005886DF /* ModificarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D2FE9352902E254005886DF /* InformacionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InformacionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2FE9392902E254005886DF /* InformacionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionUITests.swift; sourceTree = "<group>"; };
 		3D2FE93B2902E254005886DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2FE9472902EC40005886DF /* ModificarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3D2FE9172902E249005886DF /* AppDelegate.swift */,
 				3D2FE9192902E249005886DF /* SceneDelegate.swift */,
 				3D2FE91B2902E249005886DF /* ViewController.swift */,
+				3D2FE9472902EC40005886DF /* ModificarController.swift */,
 				3D2FE91D2902E24A005886DF /* Main.storyboard */,
 				3D2FE9202902E253005886DF /* Assets.xcassets */,
 				3D2FE9222902E253005886DF /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				3D2FE91C2902E249005886DF /* ViewController.swift in Sources */,
 				3D2FE9182902E249005886DF /* AppDelegate.swift in Sources */,
+				3D2FE9482902EC40005886DF /* ModificarController.swift in Sources */,
 				3D2FE91A2902E249005886DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
