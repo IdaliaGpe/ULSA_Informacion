@@ -56,17 +56,36 @@
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT3-2b-rVp">
+                                <rect key="frame" x="20" y="255" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksi-1k-NVX">
+                                <rect key="frame" x="20" y="284" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapModificar2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqP-Zx-dFm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8px-tz-7br" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="81d-W0-EpE"/>
                             <constraint firstItem="hK7-5L-mtT" firstAttribute="top" secondItem="avy-Fc-fDR" secondAttribute="bottom" constant="8" id="8h9-aC-wfO"/>
+                            <constraint firstItem="ksi-1k-NVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CpO-tW-pT1"/>
                             <constraint firstItem="hK7-5L-mtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JK4-Hp-taD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hK7-5L-mtT" secondAttribute="trailing" constant="20" id="LCW-ct-5TA"/>
+                            <constraint firstItem="sT3-2b-rVp" firstAttribute="top" secondItem="8px-tz-7br" secondAttribute="bottom" constant="13.5" id="RHG-XL-Flf"/>
                             <constraint firstItem="z8V-15-rb4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xpg-Vc-TYS"/>
                             <constraint firstItem="z8V-15-rb4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="dbU-mQ-Mfg"/>
                             <constraint firstItem="avy-Fc-fDR" firstAttribute="top" secondItem="z8V-15-rb4" secondAttribute="bottom" constant="15" id="eIq-Ja-Loc"/>
                             <constraint firstItem="8px-tz-7br" firstAttribute="top" secondItem="hK7-5L-mtT" secondAttribute="bottom" constant="8" id="ffD-xh-amL"/>
+                            <constraint firstItem="ksi-1k-NVX" firstAttribute="top" secondItem="sT3-2b-rVp" secondAttribute="bottom" constant="8" id="i70-N0-jk8"/>
+                            <constraint firstItem="sT3-2b-rVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m03-SZ-9IG"/>
                             <constraint firstItem="avy-Fc-fDR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tbY-OC-gCn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,13 +94,55 @@
                     <connections>
                         <outlet property="lblError" destination="hK7-5L-mtT" id="A9C-Z6-DNc"/>
                         <outlet property="lblTexto" destination="z8V-15-rb4" id="QZg-lk-oF2"/>
+                        <outlet property="lblTextoDos" destination="sT3-2b-rVp" id="eNB-zj-HXT"/>
                         <outlet property="swPermisoNavegacion" destination="avy-Fc-fDR" id="1b9-58-Mab"/>
                         <segue destination="OQf-Xn-4VD" kind="show" identifier="goToModificar" id="w6i-Gf-Q75"/>
+                        <segue destination="Ct0-qM-M3p" kind="show" identifier="goToModificar2" id="nip-HN-Wj1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="190" y="139"/>
+        </scene>
+        <!--Modificar2 Controller-->
+        <scene sceneID="Lq9-av-YOk">
+            <objects>
+                <viewController id="Ct0-qM-M3p" customClass="Modificar2Controller" customModule="Informacion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fzY-7S-enC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouq-y4-UhG">
+                                <rect key="frame" x="20" y="110" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-kw-tyH">
+                                <rect key="frame" x="20" y="167" width="68" height="30"/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="doTapActualizar:" destination="Ct0-qM-M3p" eventType="touchUpInside" id="42M-Qa-VcW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3v4-kw-tyH" firstAttribute="leading" secondItem="EDp-Mk-w9k" secondAttribute="leading" constant="20" id="5tn-2W-Le0"/>
+                            <constraint firstItem="ouq-y4-UhG" firstAttribute="leading" secondItem="EDp-Mk-w9k" secondAttribute="leading" constant="20" id="ENz-30-7pS"/>
+                            <constraint firstItem="ouq-y4-UhG" firstAttribute="top" secondItem="EDp-Mk-w9k" secondAttribute="top" constant="22" id="Lx6-QU-ZEA"/>
+                            <constraint firstItem="EDp-Mk-w9k" firstAttribute="trailing" secondItem="ouq-y4-UhG" secondAttribute="trailing" constant="20" id="eU4-7k-jEL"/>
+                            <constraint firstItem="3v4-kw-tyH" firstAttribute="top" secondItem="ouq-y4-UhG" secondAttribute="bottom" constant="22" id="sar-Oz-gYY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EDp-Mk-w9k"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FQ1-eL-cot"/>
+                    <connections>
+                        <outlet property="txtTexto" destination="ouq-y4-UhG" id="ncH-m5-ezv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4e-mn-Xzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.5797101449275" y="473.4375"/>
         </scene>
         <!--Modificar Controller-->
         <scene sceneID="eMQ-xX-DAO">
@@ -121,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryg-lS-d6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="139"/>
+            <point key="canvasLocation" x="1042" y="-169"/>
         </scene>
     </scenes>
 </document>
