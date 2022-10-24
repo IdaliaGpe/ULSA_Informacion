@@ -12,7 +12,7 @@ class Modificar2Controller: UIViewController {
     
     //Variables
     var texto : String?
-    var callbackActualizarDos : ((String) -> Void)?
+    var callbackActualizar : ((String) -> Void)?
     
     //Outlet
     @IBOutlet weak var txtTexto: UITextField!
@@ -27,8 +27,8 @@ class Modificar2Controller: UIViewController {
     
     //Action
     @IBAction func doTapActualizar(_ sender: Any) {
-        if callbackActualizarDos != nil {
-            callbackActualizarDos!(txtTexto.text!)
+        if callbackActualizar != nil {
+            callbackActualizar!(txtTexto.text!)
             self.navigationController?.popViewController(animated: true)
         }
     }

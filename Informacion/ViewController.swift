@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         } else if segue.identifier == "goToModificar2" {
             let destino = segue.destination as! Modificar2Controller
             destino.texto = lblTextoDos.text
-            //destino.callbackActualizarDos
+            //destino.callbackActualizarDos = actualizarEtiqueta
         }
     }
     
